@@ -13,31 +13,7 @@ struct ComparePair{
     }
 };
 
-
-vector<int> dijkstra(vector<vector<pair<int, int>>>& adj, int src, int target){
-
-    priority_queue<pair<int, int>, vector<pair<int, int>>, ComparePair> pq; // Stores the pair of {dist, node} in a priority queue such that the ones having lesser values of dist are placed on a higher priority.
-    int n = adj.size();
-    vector<int> dist(n, INT_MAX - 8888);
-    dist[src] = 0;
-    vector<bool> visited(n, false);
-
-    visited[0] = true;
-    pq.push({0, 0});
-    
-    while(!pq.empty()){
-        pair<int, int> x = pq.top();
-        pq.pop();
-
-        for(auto pr: adj[x.second]){ // This pair is different from the one in the priority queue, this pair is of {node, weight} and is having the connection node and distance to that node from x.second.
-            if(pr.second + x.first < dist[pr.first]){
-                dist[pr.first] = pr.second + x.first;
-                pq.push({dist[pr.first], pr.first});
-            }
-        }
-    }
-    return dist;
-}
+vector<int> dijkstra(vector<vector<pair<int, int>>>& adj, int src, int target);
 
 
 class Graph{
@@ -67,6 +43,33 @@ class Graph{
 
 
 };
+
+
+
+vector<int> dijkstra(vector<vector<pair<int, int>>>& adj, int src, int target){
+
+    priority_queue<pair<int, int>, vector<pair<int, int>>, ComparePair> pq; // Stores the pair of {dist, node} in a priority queue such that the ones having lesser values of dist are placed on a higher priority.
+    int n = adj.size();
+    vector<int> dist(n, INT_MAX - 8888);
+    dist[src] = 0;
+    vector<bool> visited(n, false);
+
+    visited[0] = true;
+    pq.push({0, 0});
+    
+    while(!pq.empty()){
+        pair<int, int> x = pq.top();
+        pq.pop();
+
+        for(auto pr: adj[x.second]){ // This pair is different from the one in the priority queue, this pair is of {node, weight} and is having the connection node and distance to that node from x.second.
+            if(pr.second + x.first < dist[pr.first]){
+                dist[pr.first] = pr.second + x.first;
+                pq.push({dist[pr.first], pr.first});
+            }
+        }
+    }
+    return dist;
+}
 
 
 int main(){
