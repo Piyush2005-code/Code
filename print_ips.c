@@ -2,44 +2,34 @@
 #include <stdlib.h>
 #include <ifaddrs.h>
 #include <netinet/in.h>
-#include <string.h>
 #include <arpa/inet.h>
 
-int main() {
+int main(void) {
     struct ifaddrs *ifaddr, *ifa;
-    int family, s;
-    char host[NI_MAXHOST];
 
-    // getifaddrs() creates a linked list of structures describing 
-    // the network interfaces of the local system.
     if (getifaddrs(&ifaddr) == -1) {
         perror("getifaddrs");
-        exit(EXIT_FAILURE);
+        return 1;
     }
 
     printf("System IP Addresses:\n");
     printf("--------------------------\n");
 
-    // Walk through linked list, maintaining head pointer so we can free it later
     for (ifa = ifaddr; ifa != NULL; ifa = ifa->ifa_next) {
-        if (ifa->ifa_addr == NULL)
+        if (!ifa->ifa_addr)
             continue;
 
-        family = ifa->ifa_addr->sa_family;
+        if (ifa->ifa_addr->sa_family == AF_INET) {
+            char host[INET_ADDRSTRLEN];
 
-        // We only care about IPv4 addresses (AF_INET)
-        // If you want IPv6, you would also check for AF_INET6
-        if (family == AF_INET) {
-            s = getnameinfo(ifa->ifa_addr,
-                            sizeof(struct sockaddr_in),
-                            host, NI_MAXHOST,
-                            NULL, 0, NI_NUMERICHOST);
-            if (s != 0) {
-                printf("getnameinfo() failed: %s\n", gai_strerror(s));
-                exit(EXIT_FAILURE);
-            }
+            struct sockaddr_in *sa =
+                (struct sockaddr_in *)ifa->ifa_addr;
 
-            printf("Interface: %-10s Address: %s\n", ifa->ifa_name, host);
+            inet_ntop(AF_INET, &sa->sin_addr,
+                      host, sizeof(host));
+
+            printf("Interface: %-10s Address: %s\n",
+                   ifa->ifa_name, host);
         }
     }
 
