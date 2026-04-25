@@ -1,0 +1,4 @@
+Hello, My name is Piyush Singh Bhati
+I am a student of batchelor of technoogy at the Indian Institute of Technology Jodhpur.
+I am here trying to learn the C++ Programming language which is usually not taught here
+before starting a course of second year here at IIT Jodhpur, of DSA(Data Structures and Algorithms).
