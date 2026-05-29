@@ -1,0 +1,39 @@
+unordered_map<int, int> mp;
+
+mp.clear(); //Clears the map elements
+mp.size(); //Returns the size of the map
+mp.insert({int, int}); //Inserts the key-value pair
+mp.erase(key) or mp.erase(mp.begin() + i) //Delete the key-value pair by either key or by iterator, iterator method will contain that element with which it was inserted in the order.
+for(auto um: mp){
+    cout<< um.first << " " << um.second; // The key and value pairs come out as pair<int, int>
+}
+
+mp[1] = 3; // The key and value pairs can be updated or inserted in the given manner.
+
+
+Two Sum - done through hashmaps (unordered_map)
+Product of Array Except Self - done (prefix and suffix product arrays)
+Longest Consecutive Sequence - in progress(not complete and having issues in understanding)
+Sliding Window Maximum -  
+Trapping Rain Water
+Largest Rectangle in Histogram
+LRU Cache
+LFU Cache
+Merge k Sorted Lists
+Median of Two Sorted Arrays
+Kth Largest Element
+Find Median from Data Stream
+Course Schedule
+Number of Islands
+Redundant Connection
+Accounts Merge
+Word Ladder
+Minimum Window Substring
+Coin Change
+Edit Distance
+Longest Common Subsequence
+Burst Balloons
+Network Delay Time
+Task Scheduler
+Serialize and Deserialize Binary Tree
+
