@@ -19,7 +19,7 @@ Trapping Rain Water
 Largest Rectangle in Histogram
 LRU Cache
 LFU Cache
-Merge k Sorted Lists
+Merge k Sorted Lists - Done, but the problem is something you need to remember the little details of the question in order to solve.
 Median of Two Sorted Arrays
 Kth Largest Element
 Find Median from Data Stream
