@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stack>
 #include <vector>
 
 
@@ -14,9 +13,9 @@ public:
         int area = 0;
 
         while(i < j){
-
+            //I made a mistake that I defined the area variable again inside the loop, that kept making a variable having random value and then assigning the wrong variable.
             area = max(area, min(height[i], height[j]) * (j - i));
-
+            cout<< area << endl;
             if (height[i] < height[j]) {
                 i++;
             }
@@ -30,15 +29,14 @@ public:
 
 
 int main(){
-
     int n;
-    cin>> n;
+    cout<< "Enter the number of elements of the heights array: ";
+    cin >> n;
     vector<int> height(n);
-
-    for(int& x : height){
-        cin>> x;
+    cout<< "\nEnter the " << n << " element of the heights array:";
+    for(int & x : height){
+        cin >> x;
     }
     Solution sol;
-
-    cout<< sol.maxArea(height);
+    cout<< "The maximum area in the container is " << sol.maxArea(height);
 }
