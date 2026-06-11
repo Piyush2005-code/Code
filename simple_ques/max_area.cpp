@@ -3,6 +3,9 @@
 #include <vector>
 
 
+using namespace std;
+
+
 class Solution {
 public:
     int maxArea(vector<int>& height){
@@ -12,7 +15,7 @@ public:
 
         while(i < j){
 
-            int area = max(area, min(height[i], height[j]) * (j - i));
+            area = max(area, min(height[i], height[j]) * (j - i));
 
             if (height[i] < height[j]) {
                 i++;
@@ -24,3 +27,18 @@ public:
         return area;
     }
 };
+
+
+int main(){
+
+    int n;
+    cin>> n;
+    vector<int> height(n);
+
+    for(int& x : height){
+        cin>> x;
+    }
+    Solution sol;
+
+    cout<< sol.maxArea(height);
+}
