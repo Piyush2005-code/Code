@@ -13,7 +13,7 @@ class mergeSort{
         int k = l;
         
         vector<vector<int>> L(n1);
-        vector<vector<int>> R(n2);
+        // vector<vector<int>> R(n2);
 
         for(int i = 0; i < n1; i++){
             L[i] = edges[l + i];
