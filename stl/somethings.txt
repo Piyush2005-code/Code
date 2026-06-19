@@ -46,4 +46,12 @@ Pow(x, n) - Have to get the half calculation first and then use it again and aga
 Next Permutation - This has some code which I need to understand carefully because I solved it in a manner that it has only made me memorize the solution, but cannot solve it by my own logic.
 Permutations - A Flagship question in my journey of DSA, just because I was able to solve it in one go...May the force be with you...
 N-Queens - Done with a No good approach actually applied.
+Maximum Subarray - Good Problem, need to revise through it once.
+Jump Game - That's a beautiful approach to solve this question, but I need to take a look at this question again.
+Merge Intervals - Overall a very good question, but I would want to review the code again.
+Insert Interval - I feel it might be the extension of merge Interval, but it is something a little diff.
 
+
+
+Tasks:
+Find out what is Kadane's Algorithm and implement it.
