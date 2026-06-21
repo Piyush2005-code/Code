@@ -67,7 +67,6 @@ Tasks:
  - Edit Distance DP  question
  - Do DP questions.
 
-
 Patterns:
 
  - Sliding Window:
