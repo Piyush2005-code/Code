@@ -72,13 +72,15 @@ Day 2 - Two Pointers
 
 Questions:
 
-1. Valid Palindrome
-2. Two Sum II
-3. Three Sum
-4. Container With Most Water
-5. Trapping Rain Water
+1. Valid Palindrome - Done
+2. Two Sum II - Done
+3. Three Sum - 
+4. Container With Most Water - Need to write it again and again, need to think about the intuition
+5. Trapping Rain Water - Need to understand completely.
 
 Additional:
+Some of the problems I have to practice are:
+3Sum - done but revision needed.
 
 6-30. Mixed Two Pointer Problems
 
@@ -91,7 +93,7 @@ Day 3 - Sliding Window
 
 Questions:
 
-1. Best Time to Buy and Sell Stock
+1. Best Time to Buy and Sell Stock - 
 2. Longest Substring Without Repeating Characters
 3. Longest Repeating Character Replacement
 4. Permutation In String

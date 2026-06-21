@@ -50,8 +50,33 @@ Maximum Subarray - Good Problem, need to revise through it once.
 Jump Game - That's a beautiful approach to solve this question, but I need to take a look at this question again.
 Merge Intervals - Overall a very good question, but I would want to review the code again.
 Insert Interval - I feel it might be the extension of merge Interval, but it is something a little diff.
+3Sum - Done, but I NEED to revise
+Best Time To Buy and Sell Stock - Kadane's Algorithm, like a maximum subarray problem this is also similar
+Plus One - Done...
+Unique Paths - Done, but the problem requires critical thinking and implementation, so I need to learn to implement DP properly.
+Spiral Matrix - Supposed to be done with ease, but should not underestimate the implementation of this problem as that is great.
+Edit Distance - Brilliant Question of DP, but need to look at it after, cause didn't do it now...
+Longest Substring without Repeating Characters - Did the question through correct method, but use char_set.count(s[j]) instead of char_set.find(s[j]) != char_set.end() in the while() loop.
+
 
 
 
 Tasks:
-Find out what is Kadane's Algorithm and implement it.
+ - Find out what is Kadane's Algorithm and implement it.
+ - Master Kadane's Algorithm.
+ - Edit Distance DP  question
+ - Do DP questions.
+
+
+Patterns:
+
+ - Sliding Window:
+ -- Expand Right
+
+    While Invalid:
+        Shrink Left
+
+    Update Answer
+
+ - 
+
