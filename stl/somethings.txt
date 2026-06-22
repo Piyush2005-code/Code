@@ -57,6 +57,7 @@ Unique Paths - Done, but the problem requires critical thinking and implementati
 Spiral Matrix - Supposed to be done with ease, but should not underestimate the implementation of this problem as that is great.
 Edit Distance - Brilliant Question of DP, but need to look at it after, cause didn't do it now...
 Longest Substring without Repeating Characters - Did the question through correct method, but use char_set.count(s[j]) instead of char_set.find(s[j]) != char_set.end() in the while() loop.
+Longest Repeating Character Replacement - Good Question, Logic was correct but I struggle with the implementation of correct logic in string-based questions
 
 
 
