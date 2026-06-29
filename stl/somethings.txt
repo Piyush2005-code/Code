@@ -55,15 +55,23 @@ Best Time To Buy and Sell Stock - Kadane's Algorithm, like a maximum subarray pr
 Plus One - Done...
 Unique Paths - Done, but the problem requires critical thinking and implementation, so I need to learn to implement DP properly.
 Spiral Matrix - Supposed to be done with ease, but should not underestimate the implementation of this problem as that is great.
-Edit Distance - Brilliant Question of DP, but need to look at it after, cause didn't do it now...
+Edit Distance - Brilliant Question of DP, but need to look at it after, I need to learn how to create the dp logic good, the question and logic is something I implemented but need to learn how to create the DP logic.
 Longest Substring without Repeating Characters - Did the question through correct method, but use char_set.count(s[j]) instead of char_set.find(s[j]) != char_set.end() in the while() loop.
 Longest Repeating Character Replacement - Good Question, Logic was correct but I struggle with the implementation of correct logic in string-based questions
-
+Longest Common Subsequence - DP question, whenever we have a complex problem having a lot of combinatorial patterns and checking, if no normal soltion fits then we need to see for complex DP solution.
+Max Consecutive Ones III - Sliding window, with a counter of invalid numbers limited to a maximum value...Done after learning the patterns myself.
+Subtree of Another Tree - Done, surprisingly I did it, because it's a bit confusing during the implementing the logic part of the question.
+Shortest Common Supersequence - Hard Question, DP solution and then also have to extract the string...Didn't do myself.
+Set Matrix Zeroes - The question can be done in O(NM) and has been done in my solution and O(1) space, so just see and learn the solution once, it is good.
+Search 2D Matrix - Just assume the 2D matrix as a flattened array and apply the index transformation with mid_i = mid / m; and mid_j = mid % m; and all things similar to simple binary search.
+Subsets - Generate all the subsets of the array, including the empty set, and return the power set for the given set...Implemented this and completed it with 100% but I was stuck for quite alot of time and that was a problem as then these kinds of recursive dfs questions should be able to be completed fast enough and not actually take this much time...
+Word Search - I implemented the same grid search DFS algorithm but don't know why this doesn't go 100%, same unvisited explore four paths strategy.
+Subsets II - The subsets problem but with the extension of non-repeating subsets, this problem is excellent in terms of implementation maturity and how to learn to implement recursive functions carefully, I must practice it again and again.
 
 
 
 Tasks:
- - Find out what is Kadane's Algorithm and implement it.
+ - Fin out what is Kadane's Algorithm and implement it.
  - Master Kadane's Algorithm.
  - Edit Distance DP  question
  - Do DP questions.
