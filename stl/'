@@ -1,0 +1,85 @@
+unordered_map<int, int> mp;
+
+mp.clear(); //Clears the map elements
+mp.size(); //Returns the size of the map
+mp.insert({int, int}); //Inserts the key-value pair
+mp.erase(key) or mp.erase(mp.begin() + i) //Delete the key-value pair by either key or by iterator, iterator method will contain that element with which it was inserted in the order.
+for(auto um: mp){
+    cout<< um.first << " " << um.second; // The key and value pairs come out as pair<int, int>
+}
+
+mp[1] = 3; // The key and value pairs can be updated or inserted in the given manner.
+
+
+Two Sum - done through hashmaps (unordered_map)
+Product of Array Except Self - done (prefix and suffix product arrays)
+Longest Consecutive Sequence - in progress(not complete and having issues in understanding)
+Sliding Window Maximum -  
+Trapping Rain Water
+Largest Rectangle in Histogram
+LRU Cache
+LFU Cache
+Merge k Sorted Lists - Done, but the problem is something you need to remember the little details of the question in order to solve.
+Median of Two Sorted Arrays
+Kth Largest Element
+Find Median from Data Stream
+Course Schedule
+Number of Islands
+Redundant Connection
+Accounts Merge
+Word Ladder
+Minimum Window Substring
+Coin Change
+Edit Distance
+Longest Common Subsequence
+Burst Balloons
+Network Delay Time
+Task Scheduler
+Serialize and Deserialize Binary Tree
+Trapping Rain Water - Done, but only looked at the solution, Read it again and implement again until you remember it...
+Combination Sum - Done, normal but again do it...
+Combination Sum II - Not-Done, Do it again.
+Valid Sudoku - Done logic-wise, but need to go throuh the efficient solution once again.
+Rotate Image - Done, logic is to do vertical rotation and then transpose...
+Group Anagrams - Have to do this through the use of efficient methods, as this is not efficient
+Pow(x, n) - Have to get the half calculation first and then use it again and again to reduce the complexity from O(n) to O(log(n))
+Next Permutation - This has some code which I need to understand carefully because I solved it in a manner that it has only made me memorize the solution, but cannot solve it by my own logic.
+Permutations - A Flagship question in my journey of DSA, just because I was able to solve it in one go...May the force be with you...
+N-Queens - Done with a No good approach actually applied.
+Maximum Subarray - Good Problem, need to revise through it once.
+Jump Game - That's a beautiful approach to solve this question, but I need to take a look at this question again.
+Merge Intervals - Overall a very good question, but I would want to review the code again.
+Insert Interval - I feel it might be the extension of merge Interval, but it is something a little diff.
+3Sum - Done, but I NEED to revise
+Best Time To Buy and Sell Stock - Kadane's Algorithm, like a maximum subarray problem this is also similar
+Plus One - Done...
+Unique Paths - Done, but the problem requires critical thinking and implementation, so I need to learn to implement DP properly.
+Spiral Matrix - Supposed to be done with ease, but should not underestimate the implementation of this problem as that is great.
+Edit Distance - Brilliant Question of DP, but need to look at it after, cause didn't do it now...
+Longest Substring without Repeating Characters - Did the question through correct method, but use char_set.count(s[j]) instead of char_set.find(s[j]) != char_set.end() in the while() loop.
+Longest Repeating Character Replacement - Good Question, Logic was correct but I struggle with the implementation of correct logic in string-based questions
+Longest Common Subsequence - DP question, whenever we have a complex problem having a lot of combinatorial patterns and checking, if no normal soltion fits then we need to see for complex DP solution.
+Max Consecutive Ones III - Sliding window, with a counter of invalid numbers limited to a maximum value...Done after learning the patterns myself.
+Subtree of Another Tree - Done, surprisingly I did it, because it's a bit confusing during the implementing the logic part of the question.
+
+
+
+
+Tasks:
+ - Find out what is Kadane's Algorithm and implement it.
+ - Master Kadane's Algorithm.
+ - Edit Distance DP  question
+ - Do DP questions.
+
+Patterns:
+
+ - Sliding Window:
+ -- Expand Right
+
+    While Invalid:
+        Shrink Left
+
+    Update Answer
+
+ - 
+
