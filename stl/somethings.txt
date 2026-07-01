@@ -68,6 +68,8 @@ Subsets - Generate all the subsets of the array, including the empty set, and re
 Word Search - I implemented the same grid search DFS algorithm but don't know why this doesn't go 100%, same unvisited explore four paths strategy.
 Subsets II - The subsets problem but with the extension of non-repeating subsets, this problem is excellent in terms of implementation maturity and how to learn to implement recursive functions carefully, I must practice it again and again.
 Interleaving Strings - Did it myself.
+Validate Binary Search Tree - Validate left and right subtrees with a range of min and max...also need to create another function of isValid(TreeNode* root, long long min, long long max) which takes these two minimum and maximum of the range and propagates them through the left and right subTrees, in order to validate both of them, also we need to use long long as the datatype for the range variable, some test-cases test the limits.
+
 
 
 Tasks:
