@@ -69,6 +69,12 @@ Word Search - I implemented the same grid search DFS algorithm but don't know wh
 Subsets II - The subsets problem but with the extension of non-repeating subsets, this problem is excellent in terms of implementation maturity and how to learn to implement recursive functions carefully, I must practice it again and again.
 Interleaving Strings - Did it myself.
 Validate Binary Search Tree - Validate left and right subtrees with a range of min and max...also need to create another function of isValid(TreeNode* root, long long min, long long max) which takes these two minimum and maximum of the range and propagates them through the left and right subTrees, in order to validate both of them, also we need to use long long as the datatype for the range variable, some test-cases test the limits.
+Same Tree - Checking whether the two given trees are structurally same or not...
+Binary Tree Level Order Traversal - Completed, through a queue-based system, and having levels of the tree also pushed into the queue as well, so when creating the vector<vector<int>> res, we maintain all the levels as seperate vectors.
+Last Stone Weight - Simple priority queue application can be applied, need to remember the syntax for the priority queue...Did it.
+Max Depth of a Binary Tree - Recursive function was enough...
+Balanced Binary Tree - To have the absolute difference between the heights of left and right subtree to be less than one as well as both the subtrees are also balanced...
+
 
 
 
@@ -77,6 +83,9 @@ Tasks:
  - Master Kadane's Algorithm.
  - Edit Distance DP  question
  - Do DP questions.
+
+Toolkit:
+Syntax for priority_queue<int> pq(vect.begin(), vect.end()), priority_queue<int, vector<int>, compare> where compare is a bool struct{} that returns a value;
 
 Patterns:
 
