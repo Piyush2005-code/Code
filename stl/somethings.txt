@@ -78,6 +78,7 @@ Longest Consecutive Sequence - Most Obvious thought would be to sort and then ap
 Surrounded Regions - Now this is a problem which can be problematic if you didn't understand it completely as then you wouldn't be able to get it right...So the problem is that any of the 'O' regions(regions can be spanned through DFS) which are touching the corners, mark them 'S' first and then mark all other regions, which are 'O' to be 'X', as they are now the ones to be surrouned by 'X's, then to turn all 'S' into 'O', then the work would be done...
 Clone Graph - clone each and every node without creating multiple duplicates, maintain a hashmap which maintains a map from original to the copy of the node, and we will the return the already created copy of the node only when the node's copy already exists...
 Network Delay Time - Apply the dijkstra's algorithm, it's easy.
+Kth Largest Element in a Stream - Maintain a minheap(Yes a minHeap) and then only keep the top k in the minheap by keeping the size of the heap to be three in the minheap so as to only contain the k largest into the min heap and the top will then refer to the Kth largest element.
 
 
 
@@ -103,4 +104,4 @@ Patterns:
 
  - 
 
-x : -6, y : 57, z : -154
+
