@@ -79,6 +79,9 @@ Surrounded Regions - Now this is a problem which can be problematic if you didn'
 Clone Graph - clone each and every node without creating multiple duplicates, maintain a hashmap which maintains a map from original to the copy of the node, and we will the return the already created copy of the node only when the node's copy already exists...
 Network Delay Time - Apply the dijkstra's algorithm, it's easy.
 Kth Largest Element in a Stream - Maintain a minheap(Yes a minHeap) and then only keep the top k in the minheap by keeping the size of the heap to be three in the minheap so as to only contain the k largest into the min heap and the top will then refer to the Kth largest element.
+Palindromic Substrings - you were checking substrings with the traditional methods, but since we have now to check each and every combination of the substring, why not use recursive approach to check if the substring is a palindrome or not...so that we can simply apply DP on it and make it O(N^2) time and O(N^2) space;
+Single Number - return which number appears only once(all other appears atmost twice), we basically use the bitwise XOR operation in this.
+Copy Random List - Make a Deep copy of the linked list in which there is also a pointer named random, which points to another node of the list...also try to make it such that it uses O(1) extra space...although I would suggest that you try to do it with the unordered_map<Node*, Node*> approach first as that is more standard and has also been used in the question of about the clone graph.
 
 
 
