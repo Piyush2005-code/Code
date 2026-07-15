@@ -86,6 +86,8 @@ Copy Random List - Make a Deep copy of the linked list in which there is also a 
 
 
 
+I think I really need to learn about the monotonic stack based algorithms, as I am genuinely weak at them, so I should start learning them deeply and think about what is the core idea behind their usage.
+
 Tasks:
  - Fin out what is Kadane's Algorithm and implement it.
  - Master Kadane's Algorithm.
