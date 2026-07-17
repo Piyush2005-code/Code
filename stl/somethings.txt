@@ -84,6 +84,9 @@ Single Number - return which number appears only once(all other appears atmost t
 Copy Random List - Make a Deep copy of the linked list in which there is also a pointer named random, which points to another node of the list...also try to make it such that it uses O(1) extra space...although I would suggest that you try to do it with the unordered_map<Node*, Node*> approach first as that is more standard and has also been used in the question of about the clone graph.
 Sliding Window Maximum - Maintain a deque and carefully make the code about the deque...which is actually important, and I did not understand the solution completely, I mean I will not be able to implement it myself. 
 Remove Nth Node from the end of the list - just a bit carefully pass the test-cases.
+Reverse Bits - Assume an unsigned 32-bit integer, and we have to return the number represented by the binary sequence of bits which are reversed. The question is quite difficult to think yourself and you might need to remember it for yourself, because it is difficult to think about such kind of operations.
+Evaluate Reverse Polish Notation - We have to evaluate a list of tokens which represent the reverse polish notation, in question, we have to use a stack, but the crazy part is not the usage of stack, the crazy part is the usage of  stoi() function, which is in my opinion, very implementational issue but since there can be issues during runtime, so we need to take measures.
+Lowest Common Ancester of a Binary Search Tree - We need to use the fact that this is a BST, and in a BST we know that the strict rule of left node and right node being smaller and larger respectively, can be used very efficiently. So we traverse the tree only on the basis that which node is larger than the maximum of the two node values and which node is smaller than the minimum of the two node values.
 
 
 
