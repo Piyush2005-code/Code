@@ -88,7 +88,19 @@ Reverse Bits - Assume an unsigned 32-bit integer, and we have to return the numb
 Evaluate Reverse Polish Notation - We have to evaluate a list of tokens which represent the reverse polish notation, in question, we have to use a stack, but the crazy part is not the usage of stack, the crazy part is the usage of  stoi() function, which is in my opinion, very implementational issue but since there can be issues during runtime, so we need to take measures.
 Lowest Common Ancester of a Binary Search Tree - We need to use the fact that this is a BST, and in a BST we know that the strict rule of left node and right node being smaller and larger respectively, can be used very efficiently. So we traverse the tree only on the basis that which node is larger than the maximum of the two node values and which node is smaller than the minimum of the two node values.
 Trie Implementation - Did it, I have a trie implementation in this repo as well, basically traverse the node having a Node* children[26] array, initialized to nullptr, and then we iterate over each char c : word for each of the functions that the trie supports and then simply perform auto-complete and suggestions through trie...
+Next Greater Element - Usage of a Monotonic Stack that stores the index of the element that is greater immediate to the right of the current element, and -1 if no such element is present...
+Top K Frequent Elements - Just count frequency and put elements into a minheap while popping out elements if the size gets more than k.
 
+
+
+
+
+SUGGESTION:
+When we are trying to approach a problem, we should always start from brute force solution,
+even though you have been trained by solving a lot of similar problems previously and been able
+to give a O(N) solution off the top of your head, I still recommend you to start from a brute force solution.
+This is the only way you can avoid geting stuck in your fixed mindset when you encounter a completely
+unseen or unfamiliar problem that unfortunately doesn't match any existing pattern in your trained mind.
 
 
 
