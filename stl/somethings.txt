@@ -90,7 +90,8 @@ Lowest Common Ancester of a Binary Search Tree - We need to use the fact that th
 Trie Implementation - Did it, I have a trie implementation in this repo as well, basically traverse the node having a Node* children[26] array, initialized to nullptr, and then we iterate over each char c : word for each of the functions that the trie supports and then simply perform auto-complete and suggestions through trie...
 Next Greater Element - Usage of a Monotonic Stack that stores the index of the element that is greater immediate to the right of the current element, and -1 if no such element is present...
 Top K Frequent Elements - Just count frequency and put elements into a minheap while popping out elements if the size gets more than k.
-
+Find Duplicate Number - Floyd's cycle detection algorithm to detect the duplicate number in O(N) only...with the given constraints ofcourse.
+Counting Bits - Easier form of Dynamic Programming, means the res array is filled up through recursive calls and at the same time has a base case of res[0] = 0 defined so that the res[i / 2] are not recalculated on every call.
 
 
 
@@ -106,6 +107,14 @@ unseen or unfamiliar problem that unfortunately doesn't match any existing patte
 
 I think I really need to learn about the monotonic stack based algorithms, as I am genuinely weak at them, so I should start learning them deeply and think about what is the core idea behind their usage.
 
+
+Somethings:
+Snowflake
+Aurora
+Prometheus
+Grafana
+
+
 Tasks:
  - Fin out what is Kadane's Algorithm and implement it.
  - Master Kadane's Algorithm.
@@ -117,7 +126,7 @@ Syntax for priority_queue<int> pq(vect.begin(), vect.end()), priority_queue<int,
 
 Patterns:
 
- - Sliding Window:
+Sliding Window:
  -- Expand Right
 
     While Invalid:
@@ -127,4 +136,23 @@ Patterns:
 
  - 
 
+DP Tabulation :
+    Bottom-Up : Create a table and the newer outputs depend upon the previous table values.
+    eg. (n, m) depends upon (n - 1, m), (n, m - 1) or (n - 1, m - 1).
+
+    Top-Bottom : Implement a recursive solution and basically implement all the cases(base and recursive) and then after a working solution, implement the memoization table.
+
+
+Kadane's Algorithm:
+   So basically, we have: 
+
+    int maxEnding = arr[0];
+    int ans = res[0];
+
+    for(int i = 1; i < arr.size(); i++){
+        maxEnding = max(arr[i], maxEnding + arr[i]); // simply means to either extend the sum of array by adding the current one, or simply restart from the current element of the array if the current element if more than the sum so far...
+        ans = max(ans, maxEnding); // This means to store the maximum subarray sum occured in the subarrays.
+    }
+
+But the way this algorithm is applied in the questions is a more challenging manner.
 
