@@ -92,6 +92,7 @@ Next Greater Element - Usage of a Monotonic Stack that stores the index of the e
 Top K Frequent Elements - Just count frequency and put elements into a minheap while popping out elements if the size gets more than k.
 Find Duplicate Number - Floyd's cycle detection algorithm to detect the duplicate number in O(N) only...with the given constraints ofcourse.
 Counting Bits - Easier form of Dynamic Programming, means the res array is filled up through recursive calls and at the same time has a base case of res[0] = 0 defined so that the res[i / 2] are not recalculated on every call.
+Design Add and Search Words Data Structure - Implement the Trie Data structure as it is for the addWord function, and just implement a basic DFS for the Searching words work, isn't it crazy that the current question I am talking about is also using the concept that my auto-complete of neovim is also using.
 
 
 
