@@ -1,0 +1,37 @@
+// The below given code is a standard template for Sliding Window technique for any sliding window question
+
+class Solution {
+public:
+
+    string SlidingWindow(string s, string t) {
+        vector<int> map(128, 0);
+        int counter = 0;
+        int begin = 0, end = 0;
+        int d;
+
+        for() {/*
+            We can initialize the hashmap here
+        */
+                
+        }
+
+        while(end < s.size()){
+            // The question marks in the conditions means 'some condition'
+            if(map[s[end++]]-- ?){
+                /* Modify the counter variable */
+            }            
+
+            while(/* counter condition here*/){
+                /* Update d here if finding minimum like d = min(d, end - begin)*/
+                
+                // Increase begin to make it invalid/valid again
+                if(map[s[begin++]]-- ?){/* Modify the counter here */}
+            }
+            /* Update d here if finding maximum like d = max(d, end - begin); */
+        }
+
+        return d;
+    }
+};
+
+
