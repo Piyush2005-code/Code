@@ -96,7 +96,6 @@ Design Add and Search Words Data Structure - Implement the Trie Data structure a
 
 
 
-
 SUGGESTION:
 When we are trying to approach a problem, we should always start from brute force solution,
 even though you have been trained by solving a lot of similar problems previously and been able
@@ -105,8 +104,17 @@ This is the only way you can avoid geting stuck in your fixed mindset when you e
 unseen or unfamiliar problem that unfortunately doesn't match any existing pattern in your trained mind.
 
 
-
+A lot of times I just think about using the data structures like maps and sets, but the solution lies in the two pointers and simple fast pointer slow pointer approach
 I think I really need to learn about the monotonic stack based algorithms, as I am genuinely weak at them, so I should start learning them deeply and think about what is the core idea behind their usage.
+
+
+### I want to make my DP strong, and here is the below checklist
+HouseRobber Done - with some minor difficulties in thinking about the approach of the program initially.
+
+
+
+
+
 
 
 Somethings:
@@ -142,6 +150,9 @@ DP Tabulation :
     eg. (n, m) depends upon (n - 1, m), (n, m - 1) or (n - 1, m - 1).
 
     Top-Bottom : Implement a recursive solution and basically implement all the cases(base and recursive) and then after a working solution, implement the memoization table.
+    The whole point of DP is such that there are overlapping sub-problems(the same solution is used throughout the recursion tree), which are re-computed throughout the recursion tree, so we just memoize the sub-problems(Memoize it) or simply tabulate it(bottom-Up approach), to reduce the need for re-computation and simply have an O(1) lookup with the DP-table.
+
+Understand that the Time and Space complexity of the algorithms also need to include the recursion stack space as well.
 
 
 Kadane's Algorithm:
