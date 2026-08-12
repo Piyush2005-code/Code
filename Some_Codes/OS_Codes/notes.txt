@@ -1,0 +1,2 @@
+DPDK - Data Plane Development Kit
+ - They are trying to develop applications which use the user space only
