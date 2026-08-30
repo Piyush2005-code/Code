@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<cmath>
+#include<complex>
 
 using namespace std;
 
@@ -10,7 +11,7 @@ void fft(vector<complex<double>>& a, bool invert){
     int n = a.size();
     if(n == 1) return;
 
-    vector<int> a0(n / 2), a1(n / 2);
+    vector<complex<double>> a0(n / 2), a1(n / 2);
 
     for(int i = 0; i < n / 2; i++){
         a0[i] = a[2 * i];
@@ -23,15 +24,19 @@ void fft(vector<complex<double>>& a, bool invert){
     double ang = 2 * PI / n * (invert ? -1 : 1);
     complex<double> w(1), wn(cos(ang), sin(ang));
     for(int i = 0; i < n / 2; i++){
-        a[i] = a0[i] + w * 
-
+        a[i] = a0[i] + w * a1[i];
+        a[i + n / 2] = a0[i] - w * a1[i];
+        if(invert){
+            a[i] /= 2;
+            a[i + n / 2] /= 2;
+        }
+        w *= wn;
     }
-
 }
 
 
 
-void printVect(const vector<int>& a){
+void printVect(const vector<complex<double>>& a){
     for(int i = 0; i < a.size(); i++){
         cout << a[i] << " ";
     } cout << endl;
